@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+description = "A simple utility package for counting elements in lists"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "inowak", email = "inowak@student.42.fr" }
+]
+
+[project.urls]
+"Homepage" = "https://github.com/inowak--/ft_package"
+
+[tool.setuptools]
+packages = ["ft_package"]

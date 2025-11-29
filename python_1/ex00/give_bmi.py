@@ -1,9 +1,9 @@
-# IMC = Poids (kg) ÷ [Taille (m)]² 
-
 def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]:
-    """give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]
+    """give_bmi(height: list[int | float], weight: list[int | float])
+    -> list[int | float]
 
-The function returns a list of BMIs calculated using the formula Weight ÷ Height²."""
+The function returns a list of BMIs calculated using the
+formula Weight ÷ Height²."""
 
     if len(height) != len(weight):
         print("Error: Values aren't the same size")
@@ -21,9 +21,10 @@ The function returns a list of BMIs calculated using the formula Weight ÷ Heigh
 def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     """apply_limit(bmi: list[int | float], limit: int) -> list[bool]
 
-The function returns a list of results indicating whether the IBM is above or below the limit"""
+The function returns a list of results indicating whether the IBM is above or
+below the limit"""
 
-    result = []    
+    result = []
     for el in bmi:
         if not isinstance(el, (int, float)):
             print("Error: Values aren't int or float")
